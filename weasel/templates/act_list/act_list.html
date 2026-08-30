@@ -1,0 +1,17 @@
+<ol>
+    {% for act in known_acts | reverse %}
+    <li>
+        <h1> {{ act.name }}</h2>
+        {% if loop.first %}
+        <a hx-get="{{ url_for('act_list.list_acts',
+                            game_id=game_id,
+                            reached_act=act.index)}}" 
+            hx-target="#act-list"
+            hx-push-url="true"
+            href="{{ url_for('act_list.list_acts',
+                            game_id=game_id,
+                            reached_act=act.index)}}">I solved this</a>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ol>

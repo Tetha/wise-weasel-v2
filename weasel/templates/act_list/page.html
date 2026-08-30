@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}
+Acts of {{ game.name }}
+{% endblock %}
+
+{% block content %}
+<h1> Acts of {{ game.name }}</h1>
+<div id="act-list">
+{% include 'act_list/act_list.html' %}
+</div>
+{% endblock %}

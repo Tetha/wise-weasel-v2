@@ -1,0 +1,45 @@
+{
+    "name": "Technobabylon",
+    "acts": [
+        {
+            "name": "Chapter 1: Prisoner of Consciousness",
+            "index": 0
+        },
+        {
+            "name": "Chapter 10: Suicide City",
+            "index": 10
+        },
+        {
+            "name": "Chapter 11: Fission",
+            "index": 11
+        },
+        {
+            "name": "Chapter 100: Meeting of Minds",
+            "index": 100
+        },
+        {
+            "name": "Chapter 101: Germination",
+            "index": 101
+        },
+        {
+            "name": "Chapter 110: Crisis of Consciousness",
+            "index": 110
+        },
+        {
+            "name": "Chapter 111: Jahiliyyah",
+            "index": 111
+        },
+        {
+            "name": "Chapter 1000: Flesh Drive",
+            "index": 1000
+        },
+        {
+            "name": "Chapter 1001: Ripper",
+            "index": 1001
+        },
+        {
+            "name": "Chapter 1010: Runtime",
+            "index": 1010
+        }
+    ]
+}
