@@ -6,6 +6,7 @@ from flask import Flask, g
 from weasel.models.game import Game
 from weasel.pages.game_list import create_blueprint as create_game_list_blueprint
 from weasel.pages.act_list import create_act_list_blueprint
+from weasel.pages.act_puzzle_discovery import create_act_puzzle_discovery_blueprint
 def load_walkthroughs() -> dict[str, Game]:
     source_folder = Path("walkthroughs")
 
@@ -24,11 +25,15 @@ def create_app():
 
     games = load_walkthroughs()
 
+    with open("game_schema.schema.json", 'w', encoding="UTF-8") as f:
+        json.dump(Game.model_json_schema(), f, indent=4)
+
     @app.route("/")
     def index():
         return "Hello World"
 
     app.register_blueprint(create_act_list_blueprint(games))
     app.register_blueprint(create_game_list_blueprint(games))
+    app.register_blueprint(create_act_puzzle_discovery_blueprint(games))
 
     return app

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+Puzzles in {{ game.name }} - {{ act.name }}
+{% endblock %}
+
+{% block content %}
+Hello There
+
+{% include "act_puzzle_discovery/wordcloud.html" %}
+{% endblock %}

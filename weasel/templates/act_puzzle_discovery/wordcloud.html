@@ -1,0 +1,16 @@
+<ul>
+    {% for keyword in keywords %}
+    <li>
+        <a href="{{ url_for('act_puzzle_discovery.discover_puzzles',
+                            game_id=game_id,
+                            act_id=act.index,
+                            given_keywords=",".join([keyword] + given_keywords))}}">
+        {{ keyword }}
+        </a>
+    </li>
+    {% endfor %}
+
+    {% if single_remaining_puzzle %}
+    There is just one Puzzle this could mean: {{ single_remaining_puzzle.name }}
+    {% endif %}
+</ul>

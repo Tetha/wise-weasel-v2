@@ -11,6 +11,10 @@
             href="{{ url_for('act_list.list_acts',
                             game_id=game_id,
                             reached_act=act.index)}}">I solved this</a>
+
+        <a href="{{ url_for('act_puzzle_discovery.discover_puzzles',
+                            game_id=game_id,
+                            act_id=act.index)}}">I am stuck here</a>
         {% endif %}
     </li>
     {% endfor %}

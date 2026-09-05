@@ -1,0 +1,59 @@
+{
+    "name": "The Darkside Detective",
+    "acts": [
+        {
+            "name": "Malice in Wonderland",
+            "index": 0,
+            "puzzles": {
+                "entering-study": {
+                    "name": "Entering the Study",
+                    "keywords": ["locked", "door", "study", "key"]
+                },
+                "revealing-door": {
+                    "name": "Revealing the strange door",
+                    "keywords": ["door", "invisible", "attic"]
+                },
+                "passing-door": {
+                    "name": "Opening the strange door",
+                    "keywords": ["dark", "passage", "light"]
+                },
+                "closing-door": {
+                    "name": "Closing the strange door",
+                    "keywords": ["door", "closing", "disspell"]
+                }
+            }
+        },
+        {
+            "name": "Tome Alone",
+            "index": 1
+        },
+        {
+            "name": "Disorient Express",
+            "index": 2
+        },
+        {
+            "name": "Police Farce",
+            "index": 3
+        },
+        {
+            "name": "Loch Mess",
+            "index": 4
+        },
+        {
+            "name": "Don of the Dead",
+            "index": 5
+        },
+        {
+            "name": "Buy Hard",
+            "index": 6
+        },
+        {
+            "name": "Polterguys",
+            "index": 7
+        },
+        {
+            "name": "Baits Motel",
+            "index": 8
+        }
+    ]
+}

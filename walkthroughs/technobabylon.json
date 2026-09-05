@@ -3,7 +3,13 @@
     "acts": [
         {
             "name": "Chapter 1: Prisoner of Consciousness",
-            "index": 0
+            "index": 0,
+            "puzzles": {
+                "door": {
+                    "name": "The locked appartment door",
+                    "keywords": ["knight", "door", "appartment"]
+                }
+            }
         },
         {
             "name": "Chapter 10: Suicide City",
